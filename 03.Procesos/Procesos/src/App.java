@@ -15,7 +15,7 @@ public class App {
         
         // Redirigimos la salida del hijo directamente a la consola del padre
         builder.inheritIO(); 
-
+        
         System.out.println("PADRE: Lanzando el proceso hijo 'Sumador'...");
         Process proceso = builder.start();
         proceso.waitFor(); // Esperamos a que finalice
